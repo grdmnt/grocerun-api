@@ -3,6 +3,7 @@
 TODO: Write a description here
 
 ## Project Structure
+```
 grocerun-api/
 ├── src/
 │   ├── core/                     # Domain/Enterprise business rules
@@ -28,7 +29,7 @@ grocerun-api/
 ├── spec/                      # Tests
 └── db/                        # Database-related files
     └── migrations/               # Database migration files
-
+```
 ## Installation
 
 TODO: Write installation instructions here
