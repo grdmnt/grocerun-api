@@ -1,0 +1,22 @@
+name: grocerun-api
+version: 0.1.0
+
+authors:
+  - Gerard Montemayor <me@grdmnt.com>
+
+targets:
+  grocerun-api:
+    main: src/grocerun-api.cr
+
+crystal: '>= 1.15.0'
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  micrate:
+    github: amberframework/micrate
+    version: ~> 0.15.1
+  spec-kemal:
+    github: kemalcr/spec-kemal
