@@ -1,7 +1,7 @@
 module Grocerun
   class Application
     getter db : DB::Database
-    getter user_repository : Infrastructure::Persistence::Repositories::UserRepository
+    getter user_repository : Core::Repositories::UserRepository
     getter user_use_case : Core::UseCases::UserUseCase
 
     def initialize

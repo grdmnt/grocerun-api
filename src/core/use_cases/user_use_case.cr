@@ -3,7 +3,7 @@ module Core
     class UserUseCase
       class EmailTakenError < Exception; end
 
-      def initialize(@repository : Infrastructure::Persistence::Repositories::UserRepository)
+      def initialize(@repository : Core::Repositories::UserRepository)
       end
 
       def create_user(email : String, first_name : String, last_name : String) : Entities::User
