@@ -23,7 +23,6 @@ require "./interfaces/serializers/**"
 # Web layer
 require "./web/routes/**"
 require "./web/middlewares/**"
-require "./web/config/**"
 
 # Shared utilities
 require "./shared/**"
@@ -39,7 +38,7 @@ module GrocerunApi
   Web::Routes::HealthRoutes.setup
 
   # Configure Kemal
-  Kemal.config.env = "development"  # or get from ENV
+  Kemal.config.env = "development" # or get from ENV
   Kemal.config.port = 3000         # or get from ENV
 
   if PROGRAM_NAME.ends_with?("grocerun-api")
